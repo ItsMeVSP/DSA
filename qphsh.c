@@ -22,9 +22,9 @@ int main()
         for (int j = 0; j < size; j++)
         {
             key = (value + (j * c1) + (j * j * c2)) % 11;
-            if (table[key - 1] == -1)
+            if (table[key] == -1)
             {
-                table[key - 1] = value;
+                table[key] = value;
                 break;
             }
         }
